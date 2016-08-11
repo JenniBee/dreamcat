@@ -1,0 +1,149 @@
+#include "scripts\base.inc"
+
+global WinMenu;
+
+#include "interface\verbbar\verbbar_functions.inc"
+
+var verb_default = "Talk to";
+
+var NoName;
+var Speaker;
+
+NoName  = Scene.GetNode("noname");
+Speaker = Scene.GetNode("speaker");
+
+NoName.SubtitlesPosX = 0; //position of subtitles for your entity
+NoName.SubtitlesPosY = -20;
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LookAt"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+  GoToObject();
+  Game.Interactive=false;
+
+  actor.Talk("Holy cow. Is that Edgar Allen Poe?");
+
+  verb_cleanBar();
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "TalkTo"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+
+  var Responses;
+  var Selected;
+  GoToObject();
+
+  Game.Interactive = false;
+  
+  verb_changeMode(1);
+
+  var EndBranch = false;
+
+  while(!EndBranch) // loop until the player ends this dialogue
+  {  
+    Game.AddResponseOnce(0, "Are you Edgar Allen Poe?");
+    Game.AddResponse(2, "How do I get out of here?");
+    Game.AddResponse(3, "I'll leave you and your raven in peace.");
+    
+    var Res = Game.GetResponse(true); // automatically select last response
+    
+    actor.Talk(Game.LastResponse);
+    
+    // handle the responses
+    switch(Res)
+    {
+      case 0:
+        NoName.Talk("Why does everyone always ask me that!");
+        actor.Talk("Well, you do have a raven on your shoulder.");
+        NoName.Talk("He just flew there, and he won't go away.");
+        NoName.Talk("No matter how many times I poke it with this pen.");
+        actor.Talk("What is your name?");
+        NoName.Talk("It's Edgar...");
+        actor.Talk("Allen Poe?");
+        NoName.Talk("Sigh. Just call me Noname215.");
+        actor.Talk("Why 215?");
+        NoName.Talk("Because this is the 215th time someone asked me that question.");
+        actor.Talk("I'll just stick with Noname.");
+        Game.AddResponseOnce(1, "What is this place?");
+        break;
+      case 1:
+        NoName.Talk("It's some kind of laboratory.");
+        NoName.Talk("The doctor has people sent in from this waiting room all the time.");
+        NoName.Talk("He never chooses me though.");
+        NoName.Talk("Says that I'm already transformed enough.");
+        actor.Talk("Transformed!?");
+        NoName.Talk("I don't know exactly what that means.");
+        NoName.Talk("I suppose it could be simply medical jargon.");
+      case 2:
+        NoName.Talk("I can't tell you how to get out.");
+        NoName.Talk("Otherwise, I'd have done it ages ago.");
+        NoName.Talk("You should be able to get through the door soon though.");
+        Speaker.Talk("Molly, the doctor is ready for you now.");
+        NoName.Talk("See? What did I tell you?");
+        NoName.Talk("I'd ask you to tell me how it was.");
+        NoName.Talk("However, no one ever comes back.");
+        actor.Talk("Gulp.           ");
+        Game.ChangeScene("scenes\room2\room2.scene");
+      case 3:
+        EndBranch = true;  // response #3 exits the dialogue
+        break;        
+    }
+  }
+  verb_cleanBar();
+  verb_changeMode(0);
+
+  Game.Interactive = true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "letter"
+{
+  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  GoToObject();
+  Game.Interactive=false;
+
+  actor.Talk("Want this letter?");
+  NoName.Talk("Get that wretched thing away from me!");
+  NoName.Talk("That's what got us all in this mess.");
+
+  verb_cleanBar();
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "LeftClick"
+{
+  if(Command.Verb == "")
+  {
+    GoToObject();
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "RightClick"
+{
+  verb_apply(verb_default);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "MouseEntry"
+{
+  verb_hover(verb_default);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "MouseLeave"
+{
+  verb_unhover(verb_default);
+}
+
+function GoToObject()
+{
+  actor.GoTo(59, 50);
+  actor.TurnTo(DI_UPRIGHT);
+}

@@ -1,0 +1,98 @@
+; $EDITOR_PROJECT_ROOT_DIR$ ..\..\..\
+
+ACTOR
+{
+  NAME = "dreamcat"
+  CAPTION=""
+  SCALABLE = TRUE
+  REGISTRABLE = FALSE
+  X = 100
+  Y = 100
+  SCRIPT="actors\dreamcat\dreamcat.script"
+
+  FONT = "fonts\outline_white.font"
+;-------------------------------------------------------------------------------
+  WALK
+  {
+    SPRITESET
+    {
+      LEFT       = "actors\dreamcat\ll\walk.sprite"
+      RIGHT      = "actors\dreamcat\rr\walk.sprite"
+      UP         = "actors\dreamcat\uu\walk.sprite"
+      DOWN       = "actors\dreamcat\dd\walk.sprite"
+
+      UP_LEFT    = "actors\dreamcat\ul\walk.sprite"
+      UP_RIGHT   = "actors\dreamcat\ur\walk.sprite"
+      DOWN_LEFT  = "actors\dreamcat\dl\walk.sprite"
+      DOWN_RIGHT = "actors\dreamcat\dr\walk.sprite"
+    }
+  }
+
+;-------------------------------------------------------------------------------
+  STAND
+  {
+    SPRITESET
+    {
+      LEFT       = "actors\dreamcat\ll\stand.sprite"
+      RIGHT      = "actors\dreamcat\rr\stand.sprite"
+      UP         = "actors\dreamcat\uu\stand.sprite"
+      DOWN       = "actors\dreamcat\dd\stand.sprite"
+
+      UP_LEFT    = "actors\dreamcat\ul\stand.sprite"
+      UP_RIGHT   = "actors\dreamcat\ur\stand.sprite"
+      DOWN_LEFT  = "actors\dreamcat\dl\stand.sprite"
+      DOWN_RIGHT = "actors\dreamcat\dr\stand.sprite"
+    }
+  }
+
+;-------------------------------------------------------------------------------
+  TURN_LEFT
+  {
+    SPRITESET
+    {
+      LEFT       = "actors\dreamcat\ll\turn.sprite"
+      RIGHT      = "actors\dreamcat\rr\turn.sprite"
+      UP         = "actors\dreamcat\uu\turn.sprite"
+      DOWN       = "actors\dreamcat\dd\turn.sprite"
+
+      UP_LEFT    = "actors\dreamcat\ul\turn.sprite"
+      UP_RIGHT   = "actors\dreamcat\ur\turn.sprite"
+      DOWN_LEFT  = "actors\dreamcat\dl\turn.sprite"
+      DOWN_RIGHT = "actors\dreamcat\dr\turn.sprite"
+    }
+  }
+
+;-------------------------------------------------------------------------------
+  TURN_RIGHT
+  {
+    SPRITESET
+    {
+      LEFT       = "actors\dreamcat\ll\turn.sprite"
+      RIGHT      = "actors\dreamcat\rr\turn.sprite"
+      UP         = "actors\dreamcat\uu\turn.sprite"
+      DOWN       = "actors\dreamcat\dd\turn.sprite"
+
+      UP_LEFT    = "actors\dreamcat\ul\turn.sprite"
+      UP_RIGHT   = "actors\dreamcat\ur\turn.sprite"
+      DOWN_LEFT  = "actors\dreamcat\dl\turn.sprite"
+      DOWN_RIGHT = "actors\dreamcat\dr\turn.sprite"
+    }
+  }
+
+;-------------------------------------------------------------------------------
+  TALK
+  {
+    SPRITESET
+    {
+      LEFT       = "actors\dreamcat\ll\talk.sprite"
+      RIGHT      = "actors\dreamcat\rr\talk.sprite"
+      UP         = "actors\dreamcat\uu\talk.sprite"
+      DOWN       = "actors\dreamcat\dd\talk.sprite"
+
+      UP_LEFT    = "actors\dreamcat\ul\talk.sprite"
+      UP_RIGHT   = "actors\dreamcat\ur\talk.sprite"
+      DOWN_LEFT  = "actors\dreamcat\dl\talk.sprite"
+      DOWN_RIGHT = "actors\dreamcat\dr\talk.sprite"
+    }
+  }
+}

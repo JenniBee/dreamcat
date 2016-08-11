@@ -1,0 +1,19 @@
+#include "scripts\base.inc"
+
+global WinMenu;
+
+#include "interface\verbbar\verbbar_functions.inc"
+
+////////////////////////////////////////////////////////////////////////////////
+actor.SkipTo(159, 300);
+actor.Direction = DI_DOWNRIGHT;
+
+verb_changeMode(2);
+
+// point the "camera" at the actor
+Scene.SkipTo(400,400);
+
+Sleep(2000);
+Game.ChangeScene("scenes\room\room.scene");
+
+

@@ -1,0 +1,35 @@
+#include "scripts\base.inc"
+
+global WinMenu;
+
+#include "interface\verbbar\verbbar_functions.inc"
+
+////////////////////////////////////////////////////////////////////////////////
+// load Speaker
+global speaker = Scene.LoadEntity("entities\speaker\speaker.entity");
+speaker.SkipTo(50, 283);
+speaker.SubtitlesPosX = 0; //position of subtitles for your entity
+speaker.SubtitlesPosY = -20;
+
+////////////////////////////////////////////////////////////////////////////////
+actor.SkipTo(188, 128);
+actor.Direction = DI_DOWNRIGHT;
+actor.SubtitlesPosX = 0; //position of subtitles for your actor
+actor.SubtitlesPosY = -20;
+
+verb_changeMode(0);
+
+// point the "camera" at the actor
+Scene.SkipTo(55,140);
+//Scene.SkipTo(actor);
+
+////////////////////////////////////////////////////////////////////////////////
+// scene state
+global StateRoom;
+
+// default values
+if(StateRoom==null)
+{
+  StateRoom.Visited = false;
+}
+

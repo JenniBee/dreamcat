@@ -1,0 +1,23 @@
+ITEM
+{
+   CURSOR_COMBINED = TRUE
+   CAPTION = "Letter"
+   NAME = "letter"
+   IMAGE = "items\letter.bmp"
+   CURSOR = "items\letter.bmp"
+   CURSOR_HOVER = "items\letter.bmp"
+   SCRIPT = "items\letter.script"
+}
+
+
+ITEM
+{
+   CURSOR_COMBINED = TRUE
+   CAPTION = "Cup of Water"
+   NAME = "cupofwater"
+   IMAGE = "items\cupofwater.bmp"
+   CURSOR = "items\cupofwater.bmp"
+   CURSOR_HOVER = "items\cupofwater.bmp"
+   SCRIPT = "items\cupofwater.script"
+}
+

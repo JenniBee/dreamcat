@@ -1,0 +1,18 @@
+; $EDITOR_PROJECT_ROOT_DIR$ ..\..\..\
+
+ENTITY
+{
+  NAME="jenni"
+  CAPTION="Jenni"
+  ACTIVE=TRUE
+  X=277
+  Y=313
+  SCALABLE=TRUE
+  REGISTRABLE=TRUE
+  SHADOWABLE=TRUE
+  SPRITE="entities\jenni\sprites\default.sprite"
+  TALK="entities\jenni\sprites\talk.sprite"
+
+  SCRIPT="entities\jenni\jenni.script"
+  FONT = "fonts\outline_white.font"
+}

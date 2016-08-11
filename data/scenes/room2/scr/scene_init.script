@@ -1,0 +1,29 @@
+#include "scripts\base.inc"
+
+////////////////////////////////////////////////////////////////////////////////
+// load Speaker
+global speaker = Scene.LoadEntity("entities\speaker\speaker.entity");
+speaker.SkipTo(50, 283);
+speaker.SubtitlesPosX = 0; //position of subtitles for your entity
+speaker.SubtitlesPosY = -20;
+
+////////////////////////////////////////////////////////////////////////////////
+actor.SkipTo(305, 133);
+actor.Direction = DI_DOWNRIGHT;
+actor.SubtitlesPosX = 0; //position of subtitles for your actor
+actor.SubtitlesPosY = -20;
+
+// point the "camera" at the actor
+Scene.SkipTo(55,140);
+//Scene.SkipTo(actor);
+
+////////////////////////////////////////////////////////////////////////////////
+// scene state
+global StateRoom;
+
+// default values
+if(StateRoom==null)
+{
+  StateRoom.Visited = false;
+}
+

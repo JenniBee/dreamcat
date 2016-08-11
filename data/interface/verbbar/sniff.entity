@@ -1,0 +1,11 @@
+ENTITY
+{
+  NAME="Sniff"
+  CAPTION=""
+  ACTIVE=TRUE
+  SCALABLE=FALSE
+  REGISTRABLE=TRUE
+  SHADOWABLE=TRUE
+  SPRITE="interface\verbbar\sniff_off.bmp"
+  SCRIPT="interface\verbbar\sniff.script"
+}

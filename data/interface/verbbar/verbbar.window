@@ -1,0 +1,59 @@
+WINDOW
+{
+  NAME = "verbbar"
+  IMAGE = "interface\verbbar\verbbar.bmp"
+  IN_GAME = TRUE
+  SCRIPT = "interface\verbbar\verbbar.script"
+  MENU = FALSE
+  X = 0
+  Y = 174
+
+  ENTITY_CONTAINER
+  {
+    NAME = "LookAtContainer"
+    X = 3
+    Y = 14
+    ENTITY = "interface\verbbar\lookat.entity"
+  }
+
+  ENTITY_CONTAINER
+  {
+    NAME = "TalkToContainer"
+    X = 3
+    Y = 30
+    ENTITY = "interface\verbbar\talkto.entity"
+  }
+
+  ENTITY_CONTAINER
+  {
+    NAME = "PickUpContainer"
+    X = 2
+    Y = 45
+    ENTITY = "interface\verbbar\pickup.entity"
+  }
+
+  ENTITY_CONTAINER
+  {
+    NAME = "UseContainer"
+    X = 88
+    Y = 14
+    ENTITY = "interface\verbbar\use.entity"
+  }
+
+  ENTITY_CONTAINER
+  {
+    NAME = "GiveContainer"
+    X = 88
+    Y = 30
+    ENTITY = "interface\verbbar\give.entity"
+  }
+
+  ENTITY_CONTAINER
+  {
+    NAME = "SniffContainer"
+    X = 88
+    Y = 45
+    ENTITY = "interface\verbbar\sniff.entity"
+  }
+
+}
