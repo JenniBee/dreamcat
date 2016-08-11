@@ -1,5 +1,5 @@
-Dreamcat - The Adventure Game Using Wintermute for ScummVM Dreamcast
-====================================================================
+Dreamcat - The ScummVM Dreamcast Adventure Game
+===============================================
 
 This is a 320x240 adventure game, with 8-bit resources optimized for ScummVM for Dreamcast.
 
