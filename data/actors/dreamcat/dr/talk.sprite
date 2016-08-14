@@ -10,21 +10,21 @@ SPRITE {
   FRAME {
     DELAY = 180
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\dr\talk\00.bmp"
+    IMAGE = "actors\dreamcat\dr\talk\00.bmp"
     HOTSPOT {50, 50}
   }
 
   FRAME {
     DELAY = 180
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\dr\talk\01.bmp"
+    IMAGE = "actors\dreamcat\dr\talk\01.bmp"
     HOTSPOT {50, 50}
   }
 
   FRAME {
     DELAY = 180
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\dr\talk\02.bmp"
+    IMAGE = "actors\dreamcat\dr\talk\02.bmp"
     HOTSPOT {50, 50}
     EDITOR_SELECTED=TRUE
   }
@@ -32,14 +32,14 @@ SPRITE {
   FRAME {
     DELAY = 180
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\dr\talk\03.bmp"
+    IMAGE = "actors\dreamcat\dr\talk\03.bmp"
     HOTSPOT {50, 50}
   }
 
   FRAME {
     DELAY = 180
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\dr\talk\04.bmp"
+    IMAGE = "actors\dreamcat\dr\talk\04.bmp"
     HOTSPOT {50, 50}
   }
 

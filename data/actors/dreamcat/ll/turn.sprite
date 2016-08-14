@@ -10,7 +10,7 @@ SPRITE {
   FRAME {
     DELAY = 50
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ll\talk\00.bmp"
+    IMAGE = "actors\dreamcat\ll\talk\00.bmp"
     HOTSPOT {80, 50}
     EDITOR_SELECTED=TRUE
   }

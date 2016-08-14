@@ -1,0 +1,178 @@
+
+00:06: ********** DEBUG LOG OPENED 13-08-2016 (Release Build) *****************
+00:06: Wintermute Engine ver 1.9.1, Compiled on Jan  1 2010, 09:46:49
+00:06: Platform: Windows XP or higher  (Build 9200)
+00:06: DirectX version: 9.0
+00:06: 
+00:06: Scanning packages...
+00:06:   Registered 0 files in 0 package(s)
+00:06: Initializing scripting engine...
+00:06:   Script compiler bound successfuly
+00:06: Loading plugins...
+00:06:   wme_sample_pixel.dll
+00:06:   wme_snow.dll
+00:06: Scanning packages...
+00:06:   Registered 0 files in 0 package(s)
+00:06: Enumerating Direct3D devices...
+00:06: Enumerating DirectSound devices...
+00:06: Game aspect ratio:    -1.#IND00
+00:06: Monitor aspect ratio: 1.777778
+00:06: Game aspect ratio is the same as monitor aspect ratio.
+00:06: Backup resolution:  0 x 0
+00:06: 
+00:06: Available video devices:
+00:06:   Intel(R) HD Graphics 4000 (accelerated)
+00:06:     Driver: igdumdim32.dll 10.18.10.4276
+00:06:     Monitor: 0
+00:06: Available audio devices:
+00:06:   Primary Sound Driver
+00:06:   SE24FL (Intel(R) Display Audio)
+00:06:   Digital Audio (S/PDIF) (Cirrus Logic CS4206B (AB 88))
+00:06:   Speakers (Cirrus Logic CS4206B (AB 88))
+00:06:   /syseng0019/[no sound]
+00:06: Auto selecting devices for windowed mode:
+00:06:   Video: Intel(R) HD Graphics 4000 (accelerated)
+00:06:          Windowed:yes  Colors:16bit  T&L:no  Multisample:0
+00:06:   Audio: Primary Sound Driver
+00:06: Maximum texture size: 8192x8192
+00:06: ----- Open file: 'C:\Users\Jennifer\Desktop\dreamcat\data\scenes\room\room.scene' -----
+00:07: Missing image: 'actors\molly\ll\walk\00.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\01.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\02.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\03.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\04.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\05.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\06.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\07.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\08.bmp'
+00:07: Missing image: 'actors\molly\ll\walk\09.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\00.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\01.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\02.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\03.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\04.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\05.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\06.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\07.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\08.bmp'
+00:07: Missing image: 'actors\molly\rr\walk\09.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\00.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\01.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\02.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\03.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\04.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\05.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\06.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\07.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\08.bmp'
+00:07: Missing image: 'actors\molly\uu\walk\09.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\00.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\01.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\02.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\03.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\04.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\05.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\06.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\07.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\08.bmp'
+00:07: Missing image: 'actors\molly\dd\walk\09.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\00.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\01.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\02.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\03.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\04.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\05.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\06.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\07.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\08.bmp'
+00:07: Missing image: 'actors\molly\ul\walk\09.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\00.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\01.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\02.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\03.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\04.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\05.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\06.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\07.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\08.bmp'
+00:07: Missing image: 'actors\molly\ur\walk\09.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\00.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\01.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\02.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\03.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\04.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\05.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\06.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\07.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\08.bmp'
+00:07: Missing image: 'actors\molly\dl\walk\09.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\00.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\01.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\02.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\03.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\04.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\05.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\06.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\07.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\08.bmp'
+00:07: Missing image: 'actors\molly\dr\walk\09.bmp'
+00:07: Missing image: 'actors\molly\ll\talk\00.bmp'
+00:07: Missing image: 'actors\molly\rr\talk\00.bmp'
+00:07: Missing image: 'actors\molly\uu\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dd\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ul\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ur\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dl\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dr\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ll\talk\00.bmp'
+00:07: Missing image: 'actors\molly\rr\talk\00.bmp'
+00:07: Missing image: 'actors\molly\uu\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dd\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ul\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ur\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dl\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dr\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ll\talk\00.bmp'
+00:07: Missing image: 'actors\molly\rr\talk\00.bmp'
+00:07: Missing image: 'actors\molly\uu\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dd\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ul\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ur\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dl\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dr\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ll\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ll\talk\01.bmp'
+00:07: Missing image: 'actors\molly\ll\talk\02.bmp'
+00:07: Missing image: 'actors\molly\ll\talk\03.bmp'
+00:07: Missing image: 'actors\molly\ll\talk\04.bmp'
+00:07: Missing image: 'actors\molly\rr\talk\00.bmp'
+00:07: Missing image: 'actors\molly\rr\talk\01.bmp'
+00:07: Missing image: 'actors\molly\rr\talk\02.bmp'
+00:07: Missing image: 'actors\molly\rr\talk\03.bmp'
+00:07: Missing image: 'actors\molly\rr\talk\04.bmp'
+00:07: Missing image: 'actors\molly\uu\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dd\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dd\talk\01.bmp'
+00:07: Missing image: 'actors\molly\dd\talk\02.bmp'
+00:07: Missing image: 'actors\molly\dd\talk\03.bmp'
+00:07: Missing image: 'actors\molly\dd\talk\04.bmp'
+00:07: Missing image: 'actors\molly\ul\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ul\talk\01.bmp'
+00:07: Missing image: 'actors\molly\ul\talk\02.bmp'
+00:07: Missing image: 'actors\molly\ul\talk\03.bmp'
+00:07: Missing image: 'actors\molly\ul\talk\04.bmp'
+00:07: Missing image: 'actors\molly\ur\talk\00.bmp'
+00:07: Missing image: 'actors\molly\ur\talk\01.bmp'
+00:07: Missing image: 'actors\molly\ur\talk\02.bmp'
+00:07: Missing image: 'actors\molly\ur\talk\03.bmp'
+00:07: Missing image: 'actors\molly\ur\talk\04.bmp'
+00:07: Missing image: 'actors\molly\dl\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dl\talk\01.bmp'
+00:07: Missing image: 'actors\molly\dl\talk\02.bmp'
+00:07: Missing image: 'actors\molly\dl\talk\03.bmp'
+00:07: Missing image: 'actors\molly\dl\talk\04.bmp'
+00:07: Missing image: 'actors\molly\dr\talk\00.bmp'
+00:07: Missing image: 'actors\molly\dr\talk\01.bmp'
+00:07: Missing image: 'actors\molly\dr\talk\02.bmp'
+00:07: Missing image: 'actors\molly\dr\talk\03.bmp'
+00:07: Missing image: 'actors\molly\dr\talk\04.bmp'

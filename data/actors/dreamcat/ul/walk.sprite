@@ -11,7 +11,7 @@ SPRITE {
     DELAY = 90
     MOVE {-8, -8}
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\00.bmp"
+    IMAGE = "actors\dreamcat\ul\walk\00.bmp"
     HOTSPOT {60, 50}
   }
 
@@ -19,7 +19,7 @@ SPRITE {
     DELAY = 90
     MOVE {-8, -8}
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\01.bmp"
+    IMAGE = "actors\dreamcat\ul\walk\01.bmp"
     HOTSPOT {60, 50}
   }
 
@@ -27,7 +27,7 @@ SPRITE {
     DELAY = 90
     MOVE {-8, -8}
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\02.bmp"
+    IMAGE = "actors\dreamcat\ul\walk\02.bmp"
     HOTSPOT {60, 50}
   }
 
@@ -35,7 +35,7 @@ SPRITE {
     DELAY = 90
     MOVE {-8, -8}
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\03.bmp"
+    IMAGE = "actors\dreamcat\ul\walk\03.bmp"
     HOTSPOT {60, 50}
   }
 
@@ -43,7 +43,7 @@ SPRITE {
     DELAY = 90
     MOVE {-8, -8}
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\04.bmp"
+    IMAGE = "actors\dreamcat\ul\walk\04.bmp"
     HOTSPOT {60, 50}
   }
 
@@ -51,7 +51,7 @@ SPRITE {
     DELAY = 90
     MOVE {-8, -8}
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\05.bmp"
+    IMAGE = "actors\dreamcat\ul\walk\05.bmp"
     HOTSPOT {60, 50}
   }
 
@@ -59,7 +59,7 @@ SPRITE {
     DELAY = 90
     MOVE {-8, -8}
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\06.bmp"
+    IMAGE = "actors\dreamcat\ul\walk\06.bmp"
     HOTSPOT {60, 50}
     EDITOR_SELECTED=TRUE
   }
@@ -68,23 +68,7 @@ SPRITE {
     DELAY = 90
     MOVE {-8, -8}
     KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\07.bmp"
-    HOTSPOT {60, 50}
-  }
-
-  FRAME {
-    DELAY = 90
-    MOVE {-8, -8}
-    KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\08.bmp"
-    HOTSPOT {60, 50}
-  }
-
-  FRAME {
-    DELAY = 90
-    MOVE {-8, -8}
-    KEYFRAME=FALSE
-    IMAGE = "actors\molly\ul\walk\09.bmp"
+    IMAGE = "actors\dreamcat\ul\walk\07.bmp"
     HOTSPOT {60, 50}
   }
 

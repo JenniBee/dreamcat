@@ -1,0 +1,40 @@
+
+00:05: ********** DEBUG LOG OPENED 13-08-2016 (Release Build) *****************
+00:05: Wintermute Engine ver 1.9.1, Compiled on Jan  1 2010, 09:46:49
+00:05: Platform: Windows XP or higher  (Build 9200)
+00:05: DirectX version: 9.0
+00:05: 
+00:05: Scanning packages...
+00:05:   Registered 0 files in 0 package(s)
+00:05: Initializing scripting engine...
+00:05:   Script compiler bound successfuly
+00:05: Loading plugins...
+00:05:   wme_sample_pixel.dll
+00:05:   wme_snow.dll
+00:05: Scanning packages...
+00:05:   Registered 0 files in 0 package(s)
+00:05: Enumerating Direct3D devices...
+00:05: Enumerating DirectSound devices...
+00:05: Game aspect ratio:    -1.#IND00
+00:05: Monitor aspect ratio: 1.777778
+00:05: Game aspect ratio is the same as monitor aspect ratio.
+00:05: Backup resolution:  0 x 0
+00:05: 
+00:05: Available video devices:
+00:05:   Intel(R) HD Graphics 4000 (accelerated)
+00:05:     Driver: igdumdim32.dll 10.18.10.4276
+00:05:     Monitor: 0
+00:05: Available audio devices:
+00:05:   Primary Sound Driver
+00:05:   SE24FL (Intel(R) Display Audio)
+00:05:   Digital Audio (S/PDIF) (Cirrus Logic CS4206B (AB 88))
+00:05:   Speakers (Cirrus Logic CS4206B (AB 88))
+00:05:   [no sound]
+00:05: Auto selecting devices for windowed mode:
+00:05:   Video: Intel(R) HD Graphics 4000 (accelerated)
+00:05:          Windowed:yes  Colors:16bit  T&L:no  Multisample:0
+00:05:   Audio: Primary Sound Driver
+00:05: Maximum texture size: 8192x8192
+00:05: ----- Open file: 'C:\Users\Jennifer\Desktop\dreamcat\dreamcat.wpr' -----
+00:05: Scanning packages...
+00:05:   Registered 0 files in 0 package(s)

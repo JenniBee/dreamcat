@@ -1,0 +1,47 @@
+
+00:08: ********** DEBUG LOG OPENED 13-08-2016 (Release Build) *****************
+00:08: Wintermute Engine ver 1.9.1, Compiled on Jan  1 2010, 09:47:09
+00:08: Platform: Windows XP or higher  (Build 9200)
+00:08: DirectX version: 9.0
+00:08: 
+00:08: Scanning packages...
+00:08:   Registered 0 files in 0 package(s)
+00:08: Initializing scripting engine...
+00:08:   Script compiler bound successfuly
+00:08: Loading plugins...
+00:08:   wme_sample_pixel.dll
+00:08:   wme_snow.dll
+00:08: Scanning packages...
+00:08:   Registered 0 files in 0 package(s)
+00:08: Enumerating Direct3D devices...
+00:08: Enumerating DirectSound devices...
+00:08: Game aspect ratio:    -1.#IND00
+00:08: Monitor aspect ratio: 1.777778
+00:08: Game aspect ratio is the same as monitor aspect ratio.
+00:08: Backup resolution:  0 x 0
+00:08: 
+00:08: Available video devices:
+00:08:   Intel(R) HD Graphics 4000 (accelerated)
+00:08:     Driver: igdumdim32.dll 10.18.10.4276
+00:08:     Monitor: 0
+00:08: Available audio devices:
+00:08:   Primary Sound Driver
+00:08:   SE24FL (Intel(R) Display Audio)
+00:08:   Digital Audio (S/PDIF) (Cirrus Logic CS4206B (AB 88))
+00:08:   Speakers (Cirrus Logic CS4206B (AB 88))
+00:08:   /syseng0019/[no sound]
+00:08: Auto selecting devices for windowed mode:
+00:08:   Video: Intel(R) HD Graphics 4000 (accelerated)
+00:08:          Windowed:yes  Colors:16bit  T&L:no  Multisample:0
+00:08:   Audio: Primary Sound Driver
+00:08: Maximum texture size: 8192x8192
+00:08: ----- Open file: 'C:\Users\Jennifer\Desktop\dreamcat\data\actors\dreamcat\dd\talk.sprite' -----
+00:08: Missing image: 'actors\molly\dd\talk\00.bmp'
+00:08: Missing image: 'actors\molly\dd\talk\01.bmp'
+00:08: Missing image: 'actors\molly\dd\talk\02.bmp'
+00:08: Missing image: 'actors\molly\dd\talk\03.bmp'
+00:08: Missing image: 'actors\molly\dd\talk\04.bmp'
+00:09: 
+00:09: Shutting down...
+00:09: Shutting down scripting engine
+00:09: ********** DEBUG LOG CLOSED ********************************************
