@@ -13,5 +13,10 @@ verb_changeMode(2);
 // point the "camera" at the actor
 Scene.SkipTo(400,400);
 
+on "LeftClick"
+{
+Game.ChangeScene("scenes\room\room.scene");
+}
+
 Sleep(2000);
 Game.ChangeScene("scenes\opening\wintermute.scene");

@@ -13,5 +13,10 @@ verb_changeMode(2);
 // point the "camera" at the actor
 Scene.SkipTo(400,400);
 
+on "LeftClick"
+{
+Game.QuitGame();
+}
+
 Sleep(6000);
 Game.QuitGame();
