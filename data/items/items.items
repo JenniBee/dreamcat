@@ -1,23 +1,23 @@
 ITEM
 {
    CURSOR_COMBINED = TRUE
-   CAPTION = "Letter"
-   NAME = "letter"
-   IMAGE = "items\letter.bmp"
-   CURSOR = "items\letter.bmp"
-   CURSOR_HOVER = "items\letter.bmp"
-   SCRIPT = "items\letter.script"
+   CAPTION = "Fish"
+   NAME = "fish"
+   IMAGE = "items\fish.bmp"
+   CURSOR = "items\fish.bmp"
+   CURSOR_HOVER = "items\fish.bmp"
+   SCRIPT = "items\fish.script"
 }
 
 
 ITEM
 {
    CURSOR_COMBINED = TRUE
-   CAPTION = "Cup of Water"
-   NAME = "cupofwater"
-   IMAGE = "items\cupofwater.bmp"
-   CURSOR = "items\cupofwater.bmp"
-   CURSOR_HOVER = "items\cupofwater.bmp"
-   SCRIPT = "items\cupofwater.script"
+   CAPTION = "Key"
+   NAME = "key"
+   IMAGE = "items\key.bmp"
+   CURSOR = "items\key.bmp"
+   CURSOR_HOVER = "items\key.bmp"
+   SCRIPT = "items\key.script"
 }
 

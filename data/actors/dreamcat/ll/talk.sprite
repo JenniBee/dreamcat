@@ -36,12 +36,5 @@ SPRITE {
     EDITOR_SELECTED=TRUE
   }
 
-  FRAME {
-    DELAY = 180
-    KEYFRAME=FALSE
-    IMAGE = "actors\dreamcat\ll\talk\04.bmp"
-    HOTSPOT {80, 50}
-  }
-
 }
 

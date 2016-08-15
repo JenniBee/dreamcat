@@ -7,21 +7,21 @@ global button_talkto;
 global button_pickup;
 global button_use;
 global button_give;
-global button_sniff;
+global button_move;
 
 global lookat_over;
 global talkto_over;
 global pickup_over;
 global use_over;
 global give_over;
-global sniff_over;
+global move_over;
 
 global widget_button_lookat;
 global widget_button_talkto;
 global widget_button_pickup;
 global widget_button_use;
 global widget_button_give;
-global widget_button_sniff;
+global widget_button_move;
 
 function verb_setBar(caption)
 {
@@ -35,21 +35,21 @@ function verb_initBar()
   pickup_over  = false;
   use_over     = false;
   give_over    = false;
-  sniff_over   = false;
+  move_over   = false;
 
   widget_button_lookat  = WinMenu.GetWidget("LookAtContainer");
   widget_button_talkto  = WinMenu.GetWidget("TalkToContainer");
   widget_button_pickup  = WinMenu.GetWidget("PickUpContainer");
   widget_button_use     = WinMenu.GetWidget("UseContainer");
   widget_button_give    = WinMenu.GetWidget("GiveContainer");
-  widget_button_sniff   = WinMenu.GetWidget("SniffContainer");
+  widget_button_move   = WinMenu.GetWidget("MoveContainer");
 
   button_lookat = widget_button_lookat.GetEntity();
   button_talkto = widget_button_talkto.GetEntity();
   button_pickup = widget_button_pickup.GetEntity();
   button_use    = widget_button_use.GetEntity();
   button_give   = widget_button_give.GetEntity();
-  button_sniff  = widget_button_sniff.GetEntity();
+  button_move  = widget_button_move.GetEntity();
 
   Command.Running = "";
 }
@@ -70,14 +70,14 @@ function verb_cleanBar()
   pickup_over=false;
   use_over=false;
   give_over=false;
-  sniff_over=false;
+  move_over=false;
 
   button_lookat.SetSprite("interface\verbbar\lookat_off.bmp");
   button_talkto.SetSprite("interface\verbbar\talkto_off.bmp");
   button_pickup.SetSprite("interface\verbbar\pickup_off.bmp");
   button_use.SetSprite("interface\verbbar\use_off.bmp");
   button_give.SetSprite("interface\verbbar\give_off.bmp");
-  button_sniff.SetSprite("interface\verbbar\sniff_off.bmp");
+  button_move.SetSprite("interface\verbbar\move_off.bmp");
 
   var ActObj = Game.ActiveObject;
   if(ActObj!=null) ActObj.ApplyEvent("MouseEntry");
@@ -104,8 +104,8 @@ function verb_hover(hoverme)
       case "Give":
         button_give.SetSprite("interface\verbbar\give_def.bmp");
         break;
-      case "Sniff":
-        button_sniff.SetSprite("interface\verbbar\sniff_def.bmp");
+      case "Move":
+        button_move.SetSprite("interface\verbbar\move_def.bmp");
         break;
     }
   }
@@ -132,8 +132,8 @@ function verb_unhover(unhoverme)
       case "Give":
         button_give.SetSprite("interface\verbbar\give_off.bmp");
         break;
-      case "Sniff":
-        button_sniff.SetSprite("interface\verbbar\sniff_def.bmp");
+      case "Move":
+        button_move.SetSprite("interface\verbbar\move_def.bmp");
         break;
     }
   }
@@ -156,8 +156,8 @@ function verb_unhover(unhoverme)
       case "Give":
         button_give.SetSprite("interface\verbbar\give_on.bmp");
         break;
-      case "Sniff":
-        button_sniff.SetSprite("interface\verbbar\sniff_on.bmp");
+      case "Move":
+        button_move.SetSprite("interface\verbbar\move_on.bmp");
         break;
     }
   }
@@ -189,9 +189,9 @@ function verb_apply(appverb)
       button_give.SetSprite("interface\verbbar\give_on.bmp");
       self.ApplyEvent("Give");
       break;
-    case "Sniff":
-      button_sniff.SetSprite("interface\verbbar\sniff_on.bmp");
-      self.ApplyEvent("Sniff");
+    case "Move":
+      button_move.SetSprite("interface\verbbar\move_on.bmp");
+      self.ApplyEvent("Move");
       break;
   }
 }
@@ -218,8 +218,8 @@ function verb_doesNotWork()
     case "Give":
       actor.Talk("I can't give this to that!");
       break;
-    case "Sniff":
-      actor.Talk("I'm not smelling that!");
+    case "Move":
+      actor.Talk("I can't move that!");
       break;
   }
 }
@@ -234,7 +234,7 @@ function verb_switchButtons(mode)
       widget_button_pickup.Visible  = true;
       widget_button_use.Visible     = true;
       widget_button_give.Visible    = true;
-      widget_button_sniff.Visible   = true;
+      widget_button_move.Visible    = true;
       break;
     case 0:
     default:
@@ -243,7 +243,7 @@ function verb_switchButtons(mode)
       widget_button_pickup.Visible  = false;
       widget_button_use.Visible     = false;
       widget_button_give.Visible    = false;
-      widget_button_sniff.Visible   = false;
+      widget_button_move.Visible    = false;
       break;
   }
 }

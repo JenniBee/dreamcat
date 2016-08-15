@@ -14,3 +14,7 @@ global DI_UPLEFT   =7;
 global TAL_LEFT  =0;
 global TAL_RIGHT =1;
 global TAL_CENTER=2;
+
+// global game variables
+
+global gotpermission = false; // Permission for Dog's key

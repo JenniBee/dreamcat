@@ -34,5 +34,5 @@ on "LeftClick"
   button_pickup.SetSprite("interface\verbbar\pickup_off.bmp");
   button_talkto.SetSprite("interface\verbbar\talkto_off.bmp");
   button_give.SetSprite("interface\verbbar\give_off.bmp");
-  button_sniff.SetSprite("interface\verbbar\sniff_off.bmp");
+  button_move.SetSprite("interface\verbbar\move_off.bmp");
 }

@@ -1,0 +1,18 @@
+; $EDITOR_PROJECT_ROOT_DIR$ ..\..\..\
+
+ENTITY
+{
+  NAME="dreamerdog"
+  CAPTION="Dog"
+  ACTIVE=TRUE
+  X=277
+  Y=313
+  SCALABLE=TRUE
+  REGISTRABLE=TRUE
+  SHADOWABLE=TRUE
+  SPRITE="entities\dreamerdog\sprites\default.sprite"
+  TALK="entities\dreamerdog\sprites\talk.sprite"
+
+  SCRIPT="entities\dreamerdog\dreamerdog.script"
+  FONT = "fonts\outline_white.font"
+}

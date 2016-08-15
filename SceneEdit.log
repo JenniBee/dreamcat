@@ -176,3 +176,136 @@
 00:07: Missing image: 'actors\molly\dr\talk\02.bmp'
 00:07: Missing image: 'actors\molly\dr\talk\03.bmp'
 00:07: Missing image: 'actors\molly\dr\talk\04.bmp'
+05:27: 
+05:27: Shutting down...
+05:27: Shutting down scripting engine
+05:27: ********** DEBUG LOG CLOSED ********************************************
+
+19:57: ********** DEBUG LOG OPENED 14-08-2016 (Release Build) *****************
+19:57: Wintermute Engine ver 1.9.1, Compiled on Jan  1 2010, 09:46:49
+19:57: Platform: Windows XP or higher  (Build 9200)
+19:57: DirectX version: 9.0
+19:57: 
+19:57: Scanning packages...
+19:57:   Registered 0 files in 0 package(s)
+19:57: Initializing scripting engine...
+19:57:   Script compiler bound successfuly
+19:57: Loading plugins...
+19:57:   wme_sample_pixel.dll
+19:57:   wme_snow.dll
+19:57: Scanning packages...
+19:57:   Registered 0 files in 0 package(s)
+19:57: Enumerating Direct3D devices...
+19:57: Enumerating DirectSound devices...
+19:57: Game aspect ratio:    -1.#IND00
+19:57: Monitor aspect ratio: 1.777778
+19:57: Game aspect ratio is the same as monitor aspect ratio.
+19:57: Backup resolution:  0 x 0
+19:57: 
+19:57: Available video devices:
+19:57:   Intel(R) HD Graphics 4000 (accelerated)
+19:57:     Driver: igdumdim32.dll 10.18.10.4276
+19:57:     Monitor: 0
+19:57: Available audio devices:
+19:57:   Primary Sound Driver
+19:57:   SE24FL (Intel(R) Display Audio)
+19:57:   Digital Audio (S/PDIF) (Cirrus Logic CS4206B (AB 88))
+19:57:   Speakers (Cirrus Logic CS4206B (AB 88))
+19:57:   /syseng0019/[no sound]
+19:57: Auto selecting devices for windowed mode:
+19:57:   Video: Intel(R) HD Graphics 4000 (accelerated)
+19:57:          Windowed:yes  Colors:16bit  T&L:no  Multisample:0
+19:57:   Audio: Primary Sound Driver
+19:57: Maximum texture size: 8192x8192
+19:57: ----- Open file: 'C:\Users\Jennifer\Desktop\dreamcat\data\scenes\room\room.scene' -----
+20:01: 
+20:01: Shutting down...
+20:01: Shutting down scripting engine
+20:01: ********** DEBUG LOG CLOSED ********************************************
+
+20:02: ********** DEBUG LOG OPENED 14-08-2016 (Release Build) *****************
+20:02: Wintermute Engine ver 1.9.1, Compiled on Jan  1 2010, 09:46:49
+20:02: Platform: Windows XP or higher  (Build 9200)
+20:02: DirectX version: 9.0
+20:02: 
+20:02: Scanning packages...
+20:02:   Registered 0 files in 0 package(s)
+20:02: Initializing scripting engine...
+20:02:   Script compiler bound successfuly
+20:02: Loading plugins...
+20:02:   wme_sample_pixel.dll
+20:02:   wme_snow.dll
+20:02: Scanning packages...
+20:02:   Registered 0 files in 0 package(s)
+20:02: Enumerating Direct3D devices...
+20:02: Enumerating DirectSound devices...
+20:02: Game aspect ratio:    -1.#IND00
+20:02: Monitor aspect ratio: 1.777778
+20:02: Game aspect ratio is the same as monitor aspect ratio.
+20:02: Backup resolution:  0 x 0
+20:02: 
+20:02: Available video devices:
+20:02:   Intel(R) HD Graphics 4000 (accelerated)
+20:02:     Driver: igdumdim32.dll 10.18.10.4276
+20:02:     Monitor: 0
+20:02: Available audio devices:
+20:02:   Primary Sound Driver
+20:02:   SE24FL (Intel(R) Display Audio)
+20:02:   Digital Audio (S/PDIF) (Cirrus Logic CS4206B (AB 88))
+20:02:   Speakers (Cirrus Logic CS4206B (AB 88))
+20:02:   /syseng0019/[no sound]
+20:02: Auto selecting devices for windowed mode:
+20:02:   Video: Intel(R) HD Graphics 4000 (accelerated)
+20:02:          Windowed:yes  Colors:16bit  T&L:no  Multisample:0
+20:02:   Audio: Primary Sound Driver
+20:02: Maximum texture size: 8192x8192
+20:02: ----- Open file: 'C:\Users\Jennifer\Desktop\dreamcat\data\scenes\room\room.scene' -----
+20:24: CBSprite::LoadFile failed for file 'scenes\room\sprites\water.bmp'
+20:24: CBSprite::LoadFile failed for file 'scenes\room\sprites\water.bmp'
+20:24: CBSprite::LoadFile failed for file 'scenes\room\sprites\water.bmp'
+20:25: 
+20:25: Shutting down...
+20:25: Shutting down scripting engine
+20:25: ********** DEBUG LOG CLOSED ********************************************
+
+20:25: ********** DEBUG LOG OPENED 14-08-2016 (Release Build) *****************
+20:25: Wintermute Engine ver 1.9.1, Compiled on Jan  1 2010, 09:46:49
+20:25: Platform: Windows XP or higher  (Build 9200)
+20:25: DirectX version: 9.0
+20:25: 
+20:25: Scanning packages...
+20:25:   Registered 0 files in 0 package(s)
+20:25: Initializing scripting engine...
+20:25:   Script compiler bound successfuly
+20:25: Loading plugins...
+20:25:   wme_sample_pixel.dll
+20:25:   wme_snow.dll
+20:25: Scanning packages...
+20:25:   Registered 0 files in 0 package(s)
+20:25: Enumerating Direct3D devices...
+20:25: Enumerating DirectSound devices...
+20:25: Game aspect ratio:    -1.#IND00
+20:25: Monitor aspect ratio: 1.777778
+20:25: Game aspect ratio is the same as monitor aspect ratio.
+20:25: Backup resolution:  0 x 0
+20:25: 
+20:25: Available video devices:
+20:25:   Intel(R) HD Graphics 4000 (accelerated)
+20:25:     Driver: igdumdim32.dll 10.18.10.4276
+20:25:     Monitor: 0
+20:25: Available audio devices:
+20:25:   Primary Sound Driver
+20:25:   SE24FL (Intel(R) Display Audio)
+20:25:   Digital Audio (S/PDIF) (Cirrus Logic CS4206B (AB 88))
+20:25:   Speakers (Cirrus Logic CS4206B (AB 88))
+20:25:   /syseng0019/[no sound]
+20:25: Auto selecting devices for windowed mode:
+20:25:   Video: Intel(R) HD Graphics 4000 (accelerated)
+20:25:          Windowed:yes  Colors:16bit  T&L:no  Multisample:0
+20:25:   Audio: Primary Sound Driver
+20:25: Maximum texture size: 8192x8192
+20:25: ----- Open file: 'C:\Users\Jennifer\Desktop\dreamcat\data\scenes\room\room.scene' -----
+02:55: Failed to reset 3D device.
+       returned: D3DERR_DEVICELOST
+02:55: Error creating vertex buffer for sprite operations.
+       returned: D3DERR_INVALIDCALL

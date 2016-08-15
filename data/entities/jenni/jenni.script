@@ -79,15 +79,15 @@ on "TalkTo"
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-on "letter"
+on "fish"
 {
   verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
   GoToObject();
   Game.Interactive=false;
 
-  actor.Talk("I got this letter in the mail.");
-  Jenni.Talk("Ah, fantastic.");
-  Jenni.Talk("Go right in. Dr. Anenome is right in the next room.");
+  actor.Talk("I'm not giving away my fish.");
+  Jenni.Talk("A fish? It's not quite a red herring.");
+  Jenni.Talk("But feel free to go through the door anyway.");
   verb_cleanBar();
   Game.Interactive=true;
   Game.ChangeScene("scenes\ending\ending.scene");

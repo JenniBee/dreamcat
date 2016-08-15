@@ -59,7 +59,7 @@ SCENE {
       NAME="couch"
       CAPTION=""
       ACTIVE=TRUE
-      X=184
+      X=73
       Y=66
       SCALABLE=FALSE
       INTERACTIVE=FALSE
@@ -81,38 +81,55 @@ SCENE {
     ACTIVE=TRUE
     EDITOR_SELECTED=FALSE
     ENTITY {
-      NAME="noname"
-      CAPTION="Noname"
+      NAME="dreamerdog"
+      CAPTION="Dog"
       ACTIVE=TRUE
-      X=216
-      Y=54
+      X=99
+      Y=53
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
       EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
-      SCRIPT="entities\noname\noname.script"
-      SPRITE="entities\noname\sprites\default.sprite"
+      SCRIPT="entities\dreamerdog\dreamerdog.script"
+      SPRITE="entities\dreamerdog\sprites\default.sprite"
       FONT="fonts\outline_white.font"
-        TALK="entities\noname\sprites\talk.sprite"
+        TALK="entities\dreamerdog\sprites\talk.sprite"
     }
 
     ENTITY {
-      NAME="water"
-      CAPTION="Water Dispenser"
+      NAME="television"
+      CAPTION="Television"
       ACTIVE=TRUE
-      X=68
-      Y=59
+      X=183
+      Y=56
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
       EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
-      SCRIPT="scenes\room\scr\water.script"
-      SPRITE="scenes\room\sprites\water.bmp"
+      SCRIPT="scenes\room\scr\television.script"
+      SPRITE="scenes\room\sprites\television.bmp"
     }
+
+    ENTITY {
+      NAME="key"
+      CAPTION="Key"
+      ACTIVE=TRUE
+      X=1000
+      Y=1000
+      SCALABLE=TRUE
+      INTERACTIVE=TRUE
+      COLORABLE=TRUE
+      EDITOR_SELECTED=FALSE
+      WALK_TO_X=0
+      WALK_TO_Y=0
+      SCRIPT="items\key.script"
+      SPRITE="items\key.bmp"
+    }
+
 
   }
 
@@ -123,13 +140,13 @@ SCENE {
     WIDTH=320
     HEIGHT=170
     ACTIVE=TRUE
-    EDITOR_SELECTED=FALSE
+    EDITOR_SELECTED=TRUE
     ENTITY {
       NAME="door"
       CAPTION="Door"
       ACTIVE=TRUE
-      X=25
-      Y=150
+      X=295
+      Y=149
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
@@ -142,36 +159,36 @@ SCENE {
         CAPTION=""
         ACTIVE=TRUE
         EDITOR_SELECTED_POINT=-1
-        POINT {7,58}
-        POINT {35,62}
-        POINT {44,127}
-        POINT {23,150}
+        POINT {282,60}
+        POINT {315,57}
+        POINT {299,149}
+        POINT {275,126}
       }
 
     }
 
     ENTITY {
-      NAME="window"
-      CAPTION="Window"
+      NAME="poster"
+      CAPTION="Poster"
       ACTIVE=TRUE
-      X=298
-      Y=127
+      X=21
+      Y=132
       SCALABLE=TRUE
       INTERACTIVE=TRUE
       COLORABLE=TRUE
       EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
-      SCRIPT="scenes\room\scr\window.script"
+      SCRIPT="scenes\room\scr\poster.script"
       REGION {
-        NAME="window"
+        NAME="poster"
         CAPTION=""
         ACTIVE=TRUE
         EDITOR_SELECTED_POINT=-1
-        POINT {289,69}
-        POINT {309,65}
-        POINT {301,127}
-        POINT {287,112}
+        POINT {8,64}
+        POINT {30,70}
+        POINT {35,108}
+        POINT {16,132}
       }
 
     }
@@ -185,11 +202,11 @@ SCENE {
       SCALE=0
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
-      EDITOR_SELECTED=FALSE
-      POINT {123,95}
+      EDITOR_SELECTED=TRUE
+      POINT {119,95}
       POINT {345,95}
       POINT {387,154}
-      POINT {73,154}
+      POINT {76,152}
     }
 
   }
@@ -201,7 +218,7 @@ SCENE {
     WIDTH=320
     HEIGHT=170
     ACTIVE=TRUE
-    EDITOR_SELECTED=TRUE
+    EDITOR_SELECTED=FALSE
     ENTITY {
       NAME="foreground"
       CAPTION=""
@@ -211,7 +228,7 @@ SCENE {
       SCALABLE=FALSE
       INTERACTIVE=FALSE
       COLORABLE=FALSE
-      EDITOR_SELECTED=TRUE
+      EDITOR_SELECTED=FALSE
       WALK_TO_X=0
       WALK_TO_Y=0
       SPRITE="scenes\room\foreground.bmp"

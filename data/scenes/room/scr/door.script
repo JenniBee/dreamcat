@@ -6,6 +6,10 @@ global WinMenu;
 
 var verb_default = "Look at";
 
+var DreamerDog = Scene.GetNode("dreamerdog");
+
+var Key = Scene.GetNode("key");
+
 ////////////////////////////////////////////////////////////////////////////////
 on "LookAt"
 {
@@ -15,7 +19,7 @@ on "LookAt"
 
   Game.Interactive=false;
 
-  actor.Talk("It's my way out. But it's locked.");
+  actor.Talk("It's the door leading out of this room.");
 
   verb_cleanBar();
 
@@ -49,8 +53,8 @@ on "PickUp"
   
   Game.Interactive=false;
 
-  actor.Talk("Sure, I'd pick that up.");
-  actor.Talk("If only I had a chainsaw!");
+  actor.Talk("How am I supposed to pick up a door?");
+  DreamerDog.Talk("Compliment it on its hinges?");
 
   verb_cleanBar();
 
@@ -74,7 +78,7 @@ on "Use"
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-on "Sniff"
+on "Move"
 {
   verb_setBar(Command.Verb + " "+self.Caption);
 
@@ -82,15 +86,16 @@ on "Sniff"
 
   Game.Interactive=false;
 
-  actor.Talk("It smells like cedar.");
-  
+  actor.Talk("I can't move a door, well except to open it.");
+  actor.Talk("When it's unlocked.");
+
   verb_cleanBar();
 
   Game.Interactive=true;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-on "book1"
+on "fish"
 {
   if(Command.Verb == "Give")
 	{
@@ -100,7 +105,8 @@ on "book1"
 
   	Game.Interactive=false;
 
-  actor.Talk("I'm not giving anything to that door.");
+  actor.Talk("It won't open, but hitting it with a fish won't help.");
+  DreamerDog.Talk("It would be funny though.");
 
   	verb_cleanBar();
 	}
@@ -112,7 +118,53 @@ on "book1"
 
   	Game.Interactive=false;
 
-  actor.Talk("It won't open, but throwing the letter at it won't help.");
+  actor.Talk("It won't open, but hitting it with a fish won't help.");
+  DreamerDog.Talk("It would be funny though.");
+
+  	verb_cleanBar();
+	}
+
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "key"
+{
+  if(Command.Verb == "Give")
+	{
+	verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+
+  	Game.Interactive=false;
+
+     if(!Game.IsItemTaken("key"))
+        {
+        GoToObject("key");  
+        Game.TakeItem("key");
+        Key.Active = false;
+        }
+
+  	GoToObject();
+
+  	Game.ChangeScene("scenes\room2\room2.scene");
+
+  	verb_cleanBar();
+	}
+  else
+	{
+	verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+
+  	Game.Interactive=false;
+
+     if(!Game.IsItemTaken("key"))
+        {
+        GoToObject("key");  
+        Game.TakeItem("key");
+        Key.Active = false;
+        }
+
+  	GoToObject();
+
+  	Game.ChangeScene("scenes\room2\room2.scene");
 
   	verb_cleanBar();
 	}
@@ -149,7 +201,7 @@ on "MouseLeave"
 
 function GoToObject()
 {
-  actor.GoTo(80, 120);
-  actor.TurnTo(DI_UPLEFT);
+  actor.GoTo(300, 120);
+  actor.TurnTo(DI_DOWN);
 }
 

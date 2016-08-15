@@ -50,10 +50,10 @@ WINDOW
 
   ENTITY_CONTAINER
   {
-    NAME = "SniffContainer"
+    NAME = "MoveContainer"
     X = 88
     Y = 45
-    ENTITY = "interface\verbbar\sniff.entity"
+    ENTITY = "interface\verbbar\move.entity"
   }
 
 }

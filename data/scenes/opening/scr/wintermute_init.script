@@ -14,4 +14,4 @@ verb_changeMode(2);
 Scene.SkipTo(400,400);
 
 Sleep(2000);
-Game.ChangeScene("scenes\opening\dfafadventure.scene");
+Game.ChangeScene("scenes\opening\dcadventure.scene");

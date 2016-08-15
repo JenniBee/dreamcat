@@ -1,0 +1,85 @@
+#include "scripts\base.inc"
+
+global WinMenu;
+
+#include "interface\verbbar\verbbar_functions.inc"
+
+var verb_default = "Look at";
+
+var Key = Scene.GetNode("key");
+
+////////////////////////////////////////////////////////////////////////////////
+on "LookAt"
+{
+  verb_setBar(Command.Verb + " " + Command.Object1_caption);
+  Game.Interactive = false;
+
+  actor.Talk("It's the key to the door.");
+  verb_cleanBar();
+  Game.Interactive = true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+on "key"
+{
+  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  Game.Interactive = false;
+
+  actor.Talk("I can't use the key on itself!");
+
+  verb_cleanBar();
+  Game.Interactive = true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+on "PickUp"
+{
+  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  Game.Interactive = false;
+
+if(Game.IsItemTaken("key"))
+{
+  actor.Talk("I already have it!");
+}
+else
+{
+  Game.TakeItem("key");
+  Key.Active = false;
+}
+
+  verb_cleanBar();
+  Game.Interactive = true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+on "TalkTo"
+{
+  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  Game.Interactive = false;
+
+  actor.Talk("Are you the key to success?");
+
+  verb_cleanBar();
+  Game.Interactive = true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "RightClick"
+{
+  verb_apply(verb_default);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "MouseEntry"
+{
+  verb_hover("Look at");
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "MouseLeave"
+{
+  verb_unhover("Look at");
+}

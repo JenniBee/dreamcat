@@ -6,10 +6,10 @@ global WinMenu;
 
 on "MouseEntry"
 {
-  if(lookat_over == false)
+  if(give_over == false)
   {
     button_give.SetSprite("interface\verbbar\give_on.bmp");
-    lookat_over=true;
+    give_over=true;
   }
 }
 
@@ -19,7 +19,7 @@ on "MouseLeave"
   if(Command.Verb != "Give")
   {
     button_give.SetSprite("interface\verbbar\give_off.bmp");
-    lookat_over=false;
+    give_over=false;
   }
 }
 
@@ -29,9 +29,9 @@ on "LeftClick"
   verb_cleanBar();
   Command.Verb = "Give";
   button_give.SetSprite("interface\verbbar\give_on.bmp");
-  button_lookat.SetSprite("interface\verbbar\lookat_off.bmp");
+  button_give.SetSprite("interface\verbbar\give_off.bmp");
   button_talkto.SetSprite("interface\verbbar\talkto_off.bmp");
   button_pickup.SetSprite("interface\verbbar\pickup_off.bmp");
   button_use.SetSprite("interface\verbbar\use_off.bmp");
-  button_sniff.SetSprite("interface\verbbar\sniff_off.bmp");
+  button_move.SetSprite("interface\verbbar\move_off.bmp");
 }

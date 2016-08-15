@@ -56,36 +56,6 @@ SCENE {
     }
 
     ENTITY {
-      NAME="fhqwhgads"
-      CAPTION="Fhqwhgads"
-      ACTIVE=TRUE
-      X=185
-      Y=60
-      SCALABLE=FALSE
-      INTERACTIVE=FALSE
-      COLORABLE=FALSE
-      EDITOR_SELECTED=FALSE
-      WALK_TO_X=0
-      WALK_TO_Y=0
-      SPRITE="entities\fhqwhgads\sprites\00.bmp"
-    }
-
-    ENTITY {
-      NAME="feddlefew"
-      CAPTION="Feddlefew"
-      ACTIVE=TRUE
-      X=125
-      Y=75
-      SCALABLE=FALSE
-      INTERACTIVE=FALSE
-      COLORABLE=FALSE
-      EDITOR_SELECTED=FALSE
-      WALK_TO_X=0
-      WALK_TO_Y=0
-      SPRITE="entities\feddlefew\sprites\00.bmp"
-    }
-
-    ENTITY {
       NAME="jenni"
       CAPTION="Jenni"
       ACTIVE=TRUE

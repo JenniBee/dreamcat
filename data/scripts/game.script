@@ -26,10 +26,10 @@ Game.MainObject = actor;
 // run the "daemon" script
 Game.AttachScript("scripts\game_daemon.script");
 
-Game.TakeItem("letter");
+Game.TakeItem("fish");
 
 // which scene to load?
-Game.ChangeScene("scenes\opening\dfaf.scene");
+Game.ChangeScene("scenes\opening\adventuress.scene");
 
 ////////////////////////////////////////////////////////////////////////////////
 on "LeftClick"
@@ -39,7 +39,7 @@ on "LeftClick"
   if(ActObj!=null)
   {
     // clicking an inventory item
-    if((ActObj.Type=="item" || ActObj.Type=="entity") && ActObj.Name != "PickUp" && ActObj.Name != "Use" && ActObj.Name != "TalkTo" && ActObj.Name != "LookAt" && ActObj.Name != "Give" && ActObj.Name != "Sniff")
+    if((ActObj.Type=="item" || ActObj.Type=="entity") && ActObj.Name != "PickUp" && ActObj.Name != "Use" && ActObj.Name != "TalkTo" && ActObj.Name != "LookAt" && ActObj.Name != "Give" && ActObj.Name != "Move")
     {
       if (ActObj.Caption != null && ActObj.Caption != "" && (Command.Verb == "Use" || Command.Verb == "Give"))
       {
@@ -75,9 +75,9 @@ on "LeftClick"
           Game.Interactive=true;
         }
       }
-      else if(Command.Verb == "Sniff" && ActObj.CanHandleEvent("Sniff"))
+      else if(Command.Verb == "Move" && ActObj.CanHandleEvent("Move"))
       {
-        ActObj.ApplyEvent("Sniff");
+        ActObj.ApplyEvent("Move");
       }
       else if(Command.Verb == "Give" && ActObj.CanHandleEvent("Give"))
       {
@@ -119,7 +119,7 @@ on "LeftClick"
     }
   }
   // else propagate the LeftClick event to a scene
-  else if(ActObj.Name != "PickUp" && ActObj.Name != "Use" && ActObj.Name != "TalkTo" && ActObj.Name != "LookAt" && ActObj.Name != "Give" && ActObj.Name != "Sniff")
+  else if(ActObj.Name != "PickUp" && ActObj.Name != "Use" && ActObj.Name != "TalkTo" && ActObj.Name != "LookAt" && ActObj.Name != "Give" && ActObj.Name != "Move")
   {
     Command.Object1_caption = "";
     Command.Object1_name = "";

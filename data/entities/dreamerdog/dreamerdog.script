@@ -1,0 +1,140 @@
+#include "scripts\base.inc"
+
+global WinMenu;
+
+#include "interface\verbbar\verbbar_functions.inc"
+
+var verb_default = "Talk to";
+
+var DreamerDog;
+var Speaker;
+var keyconversation = false;
+
+DreamerDog  = Scene.GetNode("dreamerdog");
+Speaker = Scene.GetNode("speaker");
+
+DreamerDog.SubtitlesPosX = 0; //position of subtitles for your entity
+DreamerDog.SubtitlesPosY = -20;
+
+
+////////////////////////////////////////////////////////////////////////////////
+on "LookAt"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+  GoToObject();
+  Game.Interactive=false;
+
+  actor.Talk("It's a hound dog.");
+
+  verb_cleanBar();
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "TalkTo"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+
+  var Responses;
+  var Selected;
+  GoToObject();
+
+  Game.Interactive = false;
+  
+  verb_changeMode(1);
+
+  var EndBranch = false;
+
+  while(!EndBranch) // loop until the player ends this dialogue
+  {  
+    Game.AddResponseOnce(0, "Who are you?");
+    Game.AddResponseOnce(1, "What is this place?");
+    Game.AddResponseOnce(2, "How do I get out of here?");
+    if(keyconversation == true)
+    {
+    Game.AddResponseOnce(3, "So I can move things to find the key?");
+    }
+    Game.AddResponse(4, "Well, I'll leave you be.");
+    
+    var Res = Game.GetResponse(true); // automatically select last response
+    
+    actor.Talk(Game.LastResponse);
+    
+    // handle the responses
+    switch(Res)
+    {
+      case 0:
+        DreamerDog.Talk("My name's Dreamer Dog.");
+        actor.Talk("What a coincidence. My name's Dreamcat.");
+        DreamerDog.Talk("Crazy.");
+        break;
+      case 1:
+        DreamerDog.Talk("I have no idea. The owner lets me hang out here, so I don't ask questions.");
+        break;
+      case 2:
+        DreamerDog.Talk("I have a key, but I lost it.");
+        DreamerDog.Talk("You can have it if you find it. I have others at home.");
+        keyconversation = true;
+        break;
+      case 3:
+        DreamerDog.Talk("Yeah, I guess so. Just don't break anything.");
+        gotpermission = true;
+        break;
+      case 4:
+        DreamerDog.Talk("Stay cool, cat.");
+        EndBranch = true;  // response #4 exits the dialogue
+        break;        
+    }
+  }
+  verb_cleanBar();
+  verb_changeMode(0);
+
+  Game.Interactive = true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "fish"
+{
+  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  GoToObject();
+  Game.Interactive=false;
+
+  actor.Talk("I'm not giving away my fish!");
+  DreamerDog.Talk("I wouldn't take it anyway. I already ate.");
+
+  verb_cleanBar();
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "LeftClick"
+{
+  if(Command.Verb == "")
+  {
+    GoToObject();
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "RightClick"
+{
+  verb_apply(verb_default);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "MouseEntry"
+{
+  verb_hover(verb_default);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "MouseLeave"
+{
+  verb_unhover(verb_default);
+}
+
+function GoToObject()
+{
+  actor.GoTo(120, 120);
+  actor.TurnTo(DI_RIGHT);
+}

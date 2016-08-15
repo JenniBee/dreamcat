@@ -1,0 +1,185 @@
+#include "scripts\base.inc"
+
+global WinMenu;
+
+#include "interface\verbbar\verbbar_functions.inc"
+
+var verb_default = "Look at";
+
+var gamestoplay; 
+ 
+gamestoplay[0] = "Ooh! I want to play DFAF Adventure!";  
+gamestoplay[1] = "Ooh! I want to play Gus and Rob!"; 
+gamestoplay[2] = "Ooh! I want to play Forum Downtime Funtime Adventure!";
+gamestoplay[3] = "Ooh! I want to play Doug's Moai Adventure!";
+gamestoplay[4] = "Ooh! I want to play Joy!";
+gamestoplay[5] = "Ooh! I want to play Marriage Quest!";
+gamestoplay[6] = "Ooh! I want to play The Call of Thunder!";
+
+var randomgame;
+
+var DreamerDog = Scene.GetNode("dreamerdog");
+
+var Television = Scene.GetNode("television");
+
+var Key = Scene.GetNode("key");
+
+////////////////////////////////////////////////////////////////////////////////
+on "LookAt"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+
+  GoToObject();
+
+  Game.Interactive=false;
+
+  randomgame = Random(0,6);
+  actor.Talk(gamestoplay[randomgame]);
+
+  verb_cleanBar();
+
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "TalkTo"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+
+  GoToObject();
+
+  Game.Interactive=false;
+
+  actor.Talk("Hello Mr. Television.");
+  DreamerDog.Talk("Milton Berle is here?");
+
+  verb_cleanBar();
+
+  Game.Interactive = true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "PickUp"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+
+  GoToObject();
+  
+  Game.Interactive=false;
+
+  verb_cleanBar();
+
+    actor.Talk("I'd love to just take the game console, but it's bolted to the TV!");
+
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "Use"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+
+  GoToObject();
+
+  Game.Interactive=false;
+
+  verb_cleanBar();
+
+    actor.Talk("It's not plugged in.");
+    actor.Talk("Hey there's not even anywhere TO plug it in!");
+
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "Move"
+{
+  verb_setBar(Command.Verb + " "+self.Caption);
+
+  actor.GoTo(307, 100);
+  actor.TurnTo(DI_LEFT);
+
+  Game.Interactive=false;
+  actor.PlayAnim("actors\dreamcat\ll\take1.sprite");
+
+if(gotpermission == true)
+{
+  Television.SkipTo(158, 56);
+  Key.SkipTo(211, 109);
+  actor.Talk("That was easier to move than I thought it'd be.");
+}
+else
+{
+  DreamerDog.Talk("Don't move things around. I don't want to upset the owner of this place.");
+  DreamerDog.Talk("I only move things when I have to.");
+}
+  
+  verb_cleanBar();
+
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "fish"
+{
+  if(Command.Verb == "Give")
+	{
+	verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+
+  	GoToObject();
+
+  	Game.Interactive=false;
+
+     actor.Talk("I don't think the television would work with that.");
+
+  	verb_cleanBar();
+	}
+  else
+	{
+	verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+
+  	GoToObject();
+
+  	Game.Interactive=false;
+
+     actor.Talk("I don't think the television would work with that.");
+
+  	verb_cleanBar();
+	}
+
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "LeftClick"
+{
+  if(Command.Verb == "")
+  {
+    GoToObject();
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "RightClick"
+{
+  verb_apply(verb_default);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "MouseEntry"
+{
+  verb_hover("Look at");
+}
+
+////////////////////////////////////////////////////////////////////////////////
+on "MouseLeave"
+{
+  verb_unhover("Look at");
+}
+
+function GoToObject()
+{
+  actor.GoTo(200, 120);
+  actor.TurnTo(DI_DOWN);
+}
+
