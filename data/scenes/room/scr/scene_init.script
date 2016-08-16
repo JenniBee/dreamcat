@@ -7,6 +7,9 @@ global WinMenu;
 var DreamerDog = Scene.GetNode("dreamerdog");
 
 ////////////////////////////////////////////////////////////////////////////////
+Game.StopMusic("music\slipping_serenity.wav");
+Game.PlayMusic("music\spring_in_the_meadow.wav", true);
+
 actor.Active=true;
 actor.SkipTo(208, 50);
 actor.PlayAnim("actors\dreamcat\dd\fall.sprite");
@@ -15,7 +18,7 @@ actor.Direction = DI_DOWN;
 actor.SubtitlesPosX = 0; //position of subtitles for your actor
 actor.SubtitlesPosY = -20;
 
-  actor.Talk("Good thing cats always land on their feet");
+  actor.Talk("Good thing cats always land on their feet!");
   DreamerDog.Talk("Oh great, another one.");
   DreamerDog.Talk("Can't you all just use the door like everyone else?");
 

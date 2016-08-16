@@ -130,7 +130,6 @@ SCENE {
       SPRITE="items\key.bmp"
     }
 
-
   }
 
   LAYER {

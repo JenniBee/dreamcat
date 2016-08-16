@@ -9,7 +9,7 @@ actor.SubtitlesPosY = -20;
 
   Game.Interactive=false;
 
-actor.GoTo(200, 137);
+actor.GoTo(120, 137);
 actor.Direction = DI_RIGHT;
 actor.PlayAnim("actors\dreamcat\rr\fall.sprite");
 actor.Active=false;

@@ -18,5 +18,5 @@ on "LeftClick"
 Game.QuitGame();
 }
 
-Sleep(6000);
+Sleep(5000);
 Game.QuitGame();

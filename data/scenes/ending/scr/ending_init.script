@@ -7,6 +7,9 @@ global WinMenu;
 ////////////////////////////////////////////////////////////////////////////////
   Game.Interactive=true;
 
+Game.StopMusic("music\slipping_serenity.wav");
+Game.PlayMusic("music\bad_golf.wav", true);
+
 actor.SkipTo(159, 300);
 actor.Direction = DI_DOWNRIGHT;
 
@@ -20,5 +23,5 @@ on "LeftClick"
 Game.ChangeScene("scenes\ending\credits.scene");
 }
 
-Sleep(6000);
+Sleep(4000);
 Game.ChangeScene("scenes\ending\credits.scene");

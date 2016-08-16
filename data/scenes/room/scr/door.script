@@ -145,6 +145,8 @@ on "key"
 
   	GoToObject();
 
+  	Game.StopMusic("music\bad_golf.wav");
+
   	Game.ChangeScene("scenes\outro\outro.scene");
 
   	verb_cleanBar();
@@ -163,6 +165,8 @@ on "key"
         }
 
   	GoToObject();
+
+  	Game.StopMusic("music\bad_golf.wav");
 
   	Game.ChangeScene("scenes\outro\outro.scene");
 
