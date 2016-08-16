@@ -6,6 +6,8 @@ global WinMenu;
 
 var verb_default = "Look at";
 
+var DreamerDog = Scene.GetNode("dreamerdog");
+
 ////////////////////////////////////////////////////////////////////////////////
 on "LookAt"
 {
@@ -50,7 +52,8 @@ on "TalkTo"
   verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
   Game.Interactive = false;
 
-  actor.Talk("Hey there, my fishy friend.");
+  actor.Talk("Hello there, my fishy friend.");
+  DreamerDog.Talk("Hey! I just had a bath last month. I don't smell that bad.");
 
   verb_cleanBar();
   Game.Interactive = true;

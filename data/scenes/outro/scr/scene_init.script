@@ -4,28 +4,24 @@ global WinMenu;
 
 #include "interface\verbbar\verbbar_functions.inc"
 
-var DreamerDog = Scene.GetNode("dreamerdog");
-
 ////////////////////////////////////////////////////////////////////////////////
-actor.Active=true;
-actor.SkipTo(208, 50);
-actor.PlayAnim("actors\dreamcat\dd\fall.sprite");
-actor.SkipTo(200, 132);
+verb_changeMode(2);
+
+actor.SkipTo(105, 137);
 actor.Direction = DI_DOWN;
+
 actor.SubtitlesPosX = 0; //position of subtitles for your actor
 actor.SubtitlesPosY = -20;
 
-  actor.Talk("Good thing cats always land on their feet");
-  DreamerDog.Talk("Oh great, another one.");
-  DreamerDog.Talk("Can't you all just use the door like everyone else?");
+  Game.Interactive=false;
+  Sleep(300);
+  actor.Talk("Yes! I made it out of that crazy place!");
 
-  Game.Interactive=true;
-
-verb_changeMode(0);
-
-// point the "camera" at the actor
-Scene.SkipTo(55,140);
-//Scene.SkipTo(actor);
+actor.GoTo(300, 137);
+actor.Direction = DI_RIGHT;
+actor.PlayAnim("actors\dreamcat\rr\fall.sprite");
+actor.Active=false;
+Game.ChangeScene("scenes\ending\ending.scene");
 
 ////////////////////////////////////////////////////////////////////////////////
 // scene state
@@ -37,3 +33,7 @@ if(StateRoom==null)
   StateRoom.Visited = false;
 }
 
+on "LeftClick"
+{
+Game.ChangeScene("scenes\room\room.scene");
+}

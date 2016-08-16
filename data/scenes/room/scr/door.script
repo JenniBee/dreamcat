@@ -145,7 +145,7 @@ on "key"
 
   	GoToObject();
 
-  	Game.ChangeScene("scenes\room2\room2.scene");
+  	Game.ChangeScene("scenes\outro\outro.scene");
 
   	verb_cleanBar();
 	}
@@ -164,7 +164,7 @@ on "key"
 
   	GoToObject();
 
-  	Game.ChangeScene("scenes\room2\room2.scene");
+  	Game.ChangeScene("scenes\outro\outro.scene");
 
   	verb_cleanBar();
 	}

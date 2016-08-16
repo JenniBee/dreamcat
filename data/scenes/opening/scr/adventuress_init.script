@@ -15,7 +15,7 @@ Scene.SkipTo(400,400);
 
 on "LeftClick"
 {
-Game.ChangeScene("scenes\room\room.scene");
+Game.ChangeScene("scenes\intro\intro.scene");
 }
 
 Sleep(2000);

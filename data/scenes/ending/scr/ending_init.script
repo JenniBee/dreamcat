@@ -5,6 +5,8 @@ global WinMenu;
 #include "interface\verbbar\verbbar_functions.inc"
 
 ////////////////////////////////////////////////////////////////////////////////
+  Game.Interactive=true;
+
 actor.SkipTo(159, 300);
 actor.Direction = DI_DOWNRIGHT;
 

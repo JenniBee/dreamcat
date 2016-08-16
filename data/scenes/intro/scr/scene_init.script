@@ -1,14 +1,19 @@
 #include "scripts\base.inc"
 
 ////////////////////////////////////////////////////////////////////////////////
-actor.SkipTo(305, 133);
-actor.Direction = DI_DOWNRIGHT;
+actor.SkipTo(58, 137);
+actor.Direction = DI_RIGHT;
+
 actor.SubtitlesPosX = 0; //position of subtitles for your actor
 actor.SubtitlesPosY = -20;
 
-// point the "camera" at the actor
-Scene.SkipTo(55,140);
-//Scene.SkipTo(actor);
+  Game.Interactive=false;
+
+actor.GoTo(200, 137);
+actor.Direction = DI_RIGHT;
+actor.PlayAnim("actors\dreamcat\rr\fall.sprite");
+actor.Active=false;
+Game.ChangeScene("scenes\room\room.scene");
 
 ////////////////////////////////////////////////////////////////////////////////
 // scene state
@@ -20,3 +25,7 @@ if(StateRoom==null)
   StateRoom.Visited = false;
 }
 
+on "LeftClick"
+{
+Game.ChangeScene("scenes\room\room.scene");
+}
