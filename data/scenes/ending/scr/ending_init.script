@@ -7,8 +7,8 @@ global WinMenu;
 ////////////////////////////////////////////////////////////////////////////////
   Game.Interactive=true;
 
-Game.StopMusic("music\slipping_serenity.wav");
-Game.PlayMusic("music\bad_golf.wav", true);
+Game.PlayMusicChannel(3, "music\bad_golf.wav", false);
+Game.MusicCrossfade(2, 3, 500);
 
 actor.SkipTo(159, 300);
 actor.Direction = DI_DOWNRIGHT;

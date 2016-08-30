@@ -2,7 +2,7 @@ WINDOW
 {
   X = 200
   Y = 200
-  WIDTH = 360
+  WIDTH = 300
   HEIGHT = 150
   NAME = "quit"
 
@@ -23,7 +23,7 @@ WINDOW
     FONT = "fonts\outline_white.font"
     X = 30
     Y = 35
-    WIDTH = 300
+    WIDTH = 240
     HEIGHT = 20
     VISIBLE = TRUE
   }
@@ -37,7 +37,7 @@ WINDOW
     FONT_SELECTED = "fonts\sserif_sel.font"
     X = 20
     Y = 60
-    WIDTH = 320
+    WIDTH = 260
     HEIGHT = 20
     FRAME_WIDTH = 2
     TEXT = ""
@@ -51,7 +51,7 @@ WINDOW
     TEMPLATE = "ui_elements\template\but.button"
     NAME = "ok"
     TEXT = "OK"
-    X = 100
+    X = 20
     Y = 100
     WIDTH = 70
     HEIGHT = 30
@@ -62,7 +62,7 @@ WINDOW
     TEMPLATE = "ui_elements\template\but.button"
     NAME = "close"
     TEXT = "Cancel"
-    X = 190
+    X = 210
     Y = 100
     WIDTH = 70
     HEIGHT = 30
@@ -71,7 +71,7 @@ WINDOW
   BUTTON
   {
     TEMPLATE = "ui_elements\template\but_cls.button"
-    X = 336
-    Y = 5
+    X = 276
+    Y = 3
   }
 }

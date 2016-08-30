@@ -7,13 +7,13 @@ global WinMenu;
 var DreamerDog = Scene.GetNode("dreamerdog");
 
 ////////////////////////////////////////////////////////////////////////////////
-Game.StopMusic("music\slipping_serenity.wav");
-Game.PlayMusic("music\spring_in_the_meadow.wav", true);
+Game.PlayMusicChannel(1, "music\spring_in_the_meadow.wav", true);
+Game.MusicCrossfade(0, 1, 1000);
 
 actor.Active=true;
 actor.SkipTo(208, 50);
 actor.PlayAnim("actors\dreamcat\dd\fall.sprite");
-actor.SkipTo(200, 132);
+actor.SkipTo(205, 130);
 actor.Direction = DI_DOWN;
 actor.SubtitlesPosX = 0; //position of subtitles for your actor
 actor.SubtitlesPosY = -20;

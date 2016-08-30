@@ -11,56 +11,56 @@ SPRITE {
     DELAY = 90
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\fall\00.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 90
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\fall\01.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 90
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\fall\02.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 400
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\fall\03.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 90
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\fall\04.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 90
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\fall\05.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 90
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\fall\06.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 500
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\fall\07.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
 }

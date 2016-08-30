@@ -16,6 +16,8 @@ Speaker = Scene.GetNode("speaker");
 DreamerDog.SubtitlesPosX = 0; //position of subtitles for your entity
 DreamerDog.SubtitlesPosY = -20;
 
+if(KnowDog != true) self.Caption = "Dog";
+else if(KnowDog == true) self.Caption = "Dreamer Dog";
 
 ////////////////////////////////////////////////////////////////////////////////
 on "LookAt"
@@ -24,7 +26,8 @@ on "LookAt"
   GoToObject();
   Game.Interactive=false;
 
-  actor.Talk("It's a hound dog.");
+  if(KnowDog != true) actor.Talk("It's a hound dog.");
+  else actor.Talk("It's Dreamer Dog.");
 
   verb_cleanBar();
   Game.Interactive=true;
@@ -38,6 +41,7 @@ on "TalkTo"
   var Responses;
   var Selected;
   GoToObject();
+  verb_cleanBar();
 
   Game.Interactive = false;
   
@@ -50,9 +54,9 @@ on "TalkTo"
     Game.AddResponseOnce(0, "Who are you?");
     Game.AddResponseOnce(1, "What is this place?");
     Game.AddResponseOnce(2, "How do I get out of here?");
-    if(keyconversation == true)
+    if(keyconversation == true && triedtomovetv == true)
     {
-    Game.AddResponseOnce(3, "So I can move things to find the key?");
+    Game.AddResponseOnce(3, "Can move things to find the key?");
     }
     Game.AddResponse(4, "Well, I'll leave you be.");
     
@@ -67,6 +71,8 @@ on "TalkTo"
         DreamerDog.Talk("My name's Dreamer Dog.");
         actor.Talk("What a coincidence. My name's Dreamcat.");
         DreamerDog.Talk("Crazy.");
+        KnowDog = true;
+        self.Caption = "Dreamer Dog";
         break;
       case 1:
         DreamerDog.Talk("I have no idea. The owner lets me hang out here, so I don't ask questions.");
@@ -107,6 +113,19 @@ on "fish"
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+on "PickUp"
+{
+  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  GoToObject();
+  Game.Interactive=false;
+
+  actor.Talk("He's not my type.");
+
+  verb_cleanBar();
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
 on "LeftClick"
 {
   if(Command.Verb == "")
@@ -135,6 +154,6 @@ on "MouseLeave"
 
 function GoToObject()
 {
-  actor.GoTo(120, 120);
-  actor.TurnTo(DI_RIGHT);
+actor.GoTo(77, 136);
+actor.TurnTo(DI_RIGHT);
 }

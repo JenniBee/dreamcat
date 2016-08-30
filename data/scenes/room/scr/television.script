@@ -96,7 +96,7 @@ on "Move"
 {
   verb_setBar(Command.Verb + " "+self.Caption);
 
-  actor.GoTo(307, 100);
+  actor.GoTo(259, 121);
   actor.TurnTo(DI_LEFT);
 
   Game.Interactive=false;
@@ -112,6 +112,7 @@ else
 {
   DreamerDog.Talk("Don't move things around. I don't want to upset the owner of this place.");
   DreamerDog.Talk("I only move things when I have to.");
+  triedtomovetv = true;
 }
   
   verb_cleanBar();
@@ -179,7 +180,7 @@ on "MouseLeave"
 
 function GoToObject()
 {
-  actor.GoTo(200, 120);
-  actor.TurnTo(DI_DOWN);
+actor.GoTo(188, 134);
+actor.TurnTo(DI_RIGHT);
 }
 

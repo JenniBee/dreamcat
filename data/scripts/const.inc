@@ -17,4 +17,6 @@ global TAL_CENTER=2;
 
 // global game variables
 
-global gotpermission = false; // Permission for Dog's key
+global gotpermission; // Permission for Dog's key
+global triedtomovetv; // Check if the TV was moved
+global KnowDog; // Check if Dreamer Dog said his name

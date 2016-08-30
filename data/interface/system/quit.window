@@ -50,6 +50,6 @@ WINDOW{
   BUTTON{
     TEMPLATE = "ui_elements\template\but_cls.button"
     X = 216
-    Y = 5
+    Y = 3
   }
 }

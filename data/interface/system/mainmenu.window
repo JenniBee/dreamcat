@@ -1,7 +1,7 @@
 WINDOW
 {
   WIDTH = 280
-  HEIGHT = 240
+  HEIGHT = 200
   NAME = "mainmenu"
 
   TITLE = "Main menu"
@@ -18,7 +18,7 @@ WINDOW
   {
     TEMPLATE = "ui_elements\template\but_cls.button"
     X = 246
-    Y = 5
+    Y = 3
   }
 
 ;----- menu buttons -----
@@ -30,7 +30,7 @@ WINDOW
     X = 10
     Y = 35
     WIDTH = 250
-    HEIGHT = 40
+    HEIGHT = 30
   }
 
   BUTTON
@@ -39,9 +39,9 @@ WINDOW
     NAME = "load"
     TEXT = "Load game"
     X = 10
-    Y = 85
+    Y = 70
     WIDTH = 250
-    HEIGHT = 40
+    HEIGHT = 30
   }
 
   BUTTON
@@ -50,9 +50,9 @@ WINDOW
     NAME = "save"
     TEXT = "Save game"
     X = 10
-    Y = 135
+    Y = 105
     WIDTH = 250
-    HEIGHT = 40
+    HEIGHT = 30
   }
 
   BUTTON
@@ -61,8 +61,8 @@ WINDOW
     NAME = "quit"
     TEXT = "Quit game"
     X = 10
-    Y = 185
+    Y = 140
     WIDTH = 250
-    HEIGHT = 40
+    HEIGHT = 30
   }
 }

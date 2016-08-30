@@ -11,28 +11,28 @@ SPRITE {
     DELAY = 180
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\talk\00.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 180
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\talk\01.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 180
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\talk\02.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 180
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\rr\talk\03.bmp"
-    HOTSPOT {60, 50}
+    HOTSPOT {19, 66}
   }
 
 }

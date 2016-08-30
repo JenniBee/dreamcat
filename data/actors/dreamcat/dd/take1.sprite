@@ -11,28 +11,28 @@ SPRITE {
     DELAY = 70
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\dd\take\00.bmp"
-    HOTSPOT {50, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 70
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\dd\take\01.bmp"
-    HOTSPOT {50, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 70
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\dd\take\02.bmp"
-    HOTSPOT {50, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
     DELAY = 70
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\dd\take\03.bmp"
-    HOTSPOT {50, 50}
+    HOTSPOT {19, 66}
     EDITOR_SELECTED=TRUE
   }
 

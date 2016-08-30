@@ -12,7 +12,7 @@ SPRITE {
     MOVE {0, -8}
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\uu\walk\00.bmp"
-    HOTSPOT {53, 50}
+    HOTSPOT {19, 66}
     EDITOR_SELECTED=TRUE
   }
 
@@ -21,7 +21,7 @@ SPRITE {
     MOVE {0, -8}
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\uu\walk\01.bmp"
-    HOTSPOT {53, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
@@ -29,7 +29,7 @@ SPRITE {
     MOVE {0, -8}
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\uu\walk\02.bmp"
-    HOTSPOT {53, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
@@ -37,7 +37,7 @@ SPRITE {
     MOVE {0, -8}
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\uu\walk\03.bmp"
-    HOTSPOT {53, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
@@ -45,7 +45,7 @@ SPRITE {
     MOVE {0, -8}
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\uu\walk\04.bmp"
-    HOTSPOT {53, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
@@ -53,7 +53,7 @@ SPRITE {
     MOVE {0, -8}
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\uu\walk\05.bmp"
-    HOTSPOT {53, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
@@ -61,7 +61,7 @@ SPRITE {
     MOVE {0, -8}
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\uu\walk\06.bmp"
-    HOTSPOT {53, 50}
+    HOTSPOT {19, 66}
   }
 
   FRAME {
@@ -69,7 +69,7 @@ SPRITE {
     MOVE {0, -8}
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\uu\walk\07.bmp"
-    HOTSPOT {53, 50}
+    HOTSPOT {19, 66}
   }
 
 }

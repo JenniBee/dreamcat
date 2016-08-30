@@ -30,6 +30,20 @@ SCENE {
   EDITOR_SHOW_SCALE=TRUE
   
   ; ----- waypoints
+  WAYPOINTS {
+    NAME="new waypoints"
+    EDITOR_SELECTED=FALSE
+    EDITOR_SELECTED_POINT=-1
+    POINT {139,134}
+    POINT {169,136}
+    POINT {168,117}
+    POINT {219,137}
+    POINT {262,134}
+    POINT {255,117}
+    POINT {101,136}
+    POINT {54,135}
+    POINT {57,119}
+  }
   
   ; ----- layers
   LAYER {
@@ -201,11 +215,43 @@ SCENE {
       SCALE=0
       ALPHA_COLOR { 255,255,255 }
       ALPHA = 255
+      EDITOR_SELECTED=FALSE
+      POINT {46,110}
+      POINT {258,110}
+      POINT {314,170}
+      POINT {17,168}
+    }
+
+    REGION {
+      NAME="block_tv"
+      CAPTION=""
+      BLOCKED=TRUE
+      DECORATION=FALSE
+      ACTIVE=TRUE
+      SCALE=0
+      ALPHA_COLOR { 255,255,255 }
+      ALPHA = 255
       EDITOR_SELECTED=TRUE
-      POINT {119,95}
-      POINT {345,95}
-      POINT {387,154}
-      POINT {76,152}
+      POINT {180,108}
+      POINT {243,111}
+      POINT {245,127}
+      POINT {181,127}
+    }
+
+    REGION {
+      NAME="block couch"
+      CAPTION=""
+      BLOCKED=TRUE
+      DECORATION=FALSE
+      ACTIVE=TRUE
+      SCALE=0
+      ALPHA_COLOR { 255,255,255 }
+      ALPHA = 255
+      EDITOR_SELECTED=FALSE
+      POINT {69,105}
+      POINT {159,105}
+      POINT {156,128}
+      POINT {69,127}
     }
 
   }

@@ -5,8 +5,8 @@ global WinMenu;
 #include "interface\verbbar\verbbar_functions.inc"
 
 ////////////////////////////////////////////////////////////////////////////////
-Game.StopMusic("music\spring_in_the_meadow.wav");
-Game.PlayMusic("music\slipping_serenity.wav", true);
+Game.PlayMusicChannel(2, "music\slipping_serenity.wav", false);
+Game.MusicCrossfade(0, 2, 500);
 
 verb_changeMode(2);
 

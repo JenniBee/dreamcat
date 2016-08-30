@@ -11,7 +11,7 @@ SPRITE {
     DELAY = 50
     KEYFRAME=FALSE
     IMAGE = "actors\dreamcat\dd\talk\00.bmp"
-    HOTSPOT {50, 50}
+    HOTSPOT {19, 66}
     EDITOR_SELECTED=TRUE
   }
 
