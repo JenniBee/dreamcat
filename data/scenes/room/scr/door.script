@@ -105,8 +105,8 @@ on "fish"
 
   	Game.Interactive=false;
 
-  actor.Talk("It won't open, but hitting it with a fish won't help.");
-  DreamerDog.Talk("It would be funny though.");
+  actor.Talk("Give the door a fish and it will have a fish.");
+  actor.Talk("Teach a door how to fish and it won't do much because it's a door.");
 
   	verb_cleanBar();
 	}

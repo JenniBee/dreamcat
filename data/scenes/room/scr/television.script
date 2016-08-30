@@ -125,13 +125,13 @@ on "fish"
 {
   if(Command.Verb == "Give")
 	{
-	verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+	verb_setBar(Command.Verb + " " + Command.Object1_caption + " to " + Command.Object2_caption);
 
   	GoToObject();
 
   	Game.Interactive=false;
 
-     actor.Talk("I don't think the television would work with that.");
+     actor.Talk("I don't think giving the television a fish would do much.");
 
   	verb_cleanBar();
 	}
@@ -143,8 +143,9 @@ on "fish"
 
   	Game.Interactive=false;
 
-     actor.Talk("I don't think the television would work with that.");
-
+     actor.Talk("I don't think a fish would work with a television.");
+     DreamerDog.Talk("Unless he was a genius with electronics");
+     DreamerDog.Talk("and wasn't in the water at the time.");
   	verb_cleanBar();
 	}
 

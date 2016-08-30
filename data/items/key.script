@@ -23,7 +23,8 @@ on "LookAt"
 
 on "key"
 {
-  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  if(Command.Verb == "Use")  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  if(Command.Verb == "Give")  verb_setBar(Command.Verb + " " + Command.Object1_caption + " to " + Command.Object2_caption);
   Game.Interactive = false;
 
   actor.Talk("I can't use the key on itself!");
@@ -36,7 +37,7 @@ on "key"
 
 on "PickUp"
 {
-  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  verb_setBar(Command.Verb + " " + Command.Object1_caption);
   Game.Interactive = false;
 
 if(Game.IsItemTaken("key"))
@@ -57,7 +58,7 @@ else
 
 on "TalkTo"
 {
-  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  verb_setBar(Command.Verb + " " + Command.Object1_caption);
   Game.Interactive = false;
 
   actor.Talk("Are you the key to success?");

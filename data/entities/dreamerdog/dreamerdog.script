@@ -101,7 +101,8 @@ on "TalkTo"
 ////////////////////////////////////////////////////////////////////////////////
 on "fish"
 {
-  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  if(Command.Verb == "Use")  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  if(Command.Verb == "Give")  verb_setBar(Command.Verb + " " + Command.Object1_caption + " to " + Command.Object2_caption);
   GoToObject();
   Game.Interactive=false;
 
@@ -113,9 +114,23 @@ on "fish"
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+on "key"
+{
+  if(Command.Verb == "Use")  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  if(Command.Verb == "Give")  verb_setBar(Command.Verb + " " + Command.Object1_caption + " to " + Command.Object2_caption);
+  GoToObject();
+  Game.Interactive=false;
+
+  DreamerDog.Talk("Go ahead and keep it. I have many more at home.");
+
+  verb_cleanBar();
+  Game.Interactive=true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
 on "PickUp"
 {
-  verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+  verb_setBar(Command.Verb + " " + Command.Object1_caption);
   GoToObject();
   Game.Interactive=false;
 

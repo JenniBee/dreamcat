@@ -66,9 +66,10 @@ on "LeftClick"
         {
           Object2.ApplyEvent(Command.Object1_name);
         }
-        else 
+        else
         {
-          verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+          if(Command.Verb == "Use") verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+          if(Command.Verb == "Give") verb_setBar(Command.Verb + " " + Command.Object1_caption + " to " + Command.Object2_caption);
           Game.Interactive=false;
           verb_doesNotWork();
           verb_cleanBar();

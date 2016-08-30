@@ -61,7 +61,7 @@ on "fish"
 {
   if(Command.Verb == "Give")
 	{
-	verb_setBar(Command.Verb + " " + Command.Object1_caption + " with " + Command.Object2_caption);
+	verb_setBar(Command.Verb + " " + Command.Object1_caption + " to " + Command.Object2_caption);
 
   	GoToObject();
 
