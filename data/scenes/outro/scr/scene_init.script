@@ -5,7 +5,7 @@ global WinMenu;
 #include "interface\verbbar\verbbar_functions.inc"
 
 ////////////////////////////////////////////////////////////////////////////////
-Game.PlayMusicChannel(2, "music\slipping_serenity.wav", false);
+Game.PlayMusicChannel(2, "music\happyscowl.wav", false);
 Game.MusicCrossfade(0, 2, 500);
 
 verb_changeMode(2);

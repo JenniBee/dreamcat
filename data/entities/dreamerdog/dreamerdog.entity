@@ -14,5 +14,5 @@ ENTITY
   TALK="entities\dreamerdog\sprites\talk.sprite"
 
   SCRIPT="entities\dreamerdog\dreamerdog.script"
-  FONT = "fonts\outline_white.font"
+  FONT = "fonts\outline_yellow.font"
 }

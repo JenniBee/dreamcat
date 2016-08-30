@@ -1,27 +1,28 @@
 INVENTORY_BOX
 {
-  ITEM_WIDTH = 20
-  ITEM_HEIGHT = 16
-  SPACING = 4
-  SCROLL_BY = 4
+  ITEM_WIDTH = 28
+  ITEM_HEIGHT = 18
+  SPACING = 0
+  SCROLL_BY = 3
   HIDE_SELECTED = TRUE
 
-  AREA { 20, 0, 270, 91 }
+  AREA { 1, 0, 94, 42 }
+
   EXCLUSIVE = FALSE
   ALWAYS_VISIBLE = TRUE
 
   WINDOW
   {
-    X = 200
-    Y = 196
-    WIDTH = 108
-    HEIGHT = 36
+    X = 181
+    Y = 191
+    WIDTH = 5
+    HEIGHT = 5
     IMAGE = "interface\inventory.bmp"
   
     BUTTON
     {
       NAME = "prev"
-      X = 0
+      X = 115
       Y = 2
       WIDTH = 20
       HEIGHT = 20
@@ -36,8 +37,8 @@ INVENTORY_BOX
     BUTTON
     {
       NAME = "next"
-      X = 0
-      Y = 24
+      X = 115
+      Y = 20
       WIDTH = 20
       HEIGHT = 20
 
@@ -49,3 +50,4 @@ INVENTORY_BOX
     }
   }
 }
+

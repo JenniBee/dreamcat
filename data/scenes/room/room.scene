@@ -108,8 +108,8 @@ SCENE {
       WALK_TO_Y=0
       SCRIPT="entities\dreamerdog\dreamerdog.script"
       SPRITE="entities\dreamerdog\sprites\default.sprite"
-      FONT="fonts\outline_white.font"
-        TALK="entities\dreamerdog\sprites\talk.sprite"
+      FONT="fonts\outline_yellow.font"
+      TALK="entities\dreamerdog\sprites\talk.sprite"
     }
 
     ENTITY {

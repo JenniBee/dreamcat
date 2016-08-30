@@ -7,8 +7,8 @@ global WinMenu;
 var DreamerDog = Scene.GetNode("dreamerdog");
 
 ////////////////////////////////////////////////////////////////////////////////
-Game.PlayMusicChannel(1, "music\spring_in_the_meadow.wav", true);
-Game.MusicCrossfade(0, 1, 1000);
+Game.PlayMusicChannel(1, "music\dreamerdogfunk.wav", true);
+Game.MusicCrossfade(0, 1, 500);
 
 actor.Active=true;
 actor.SkipTo(208, 50);

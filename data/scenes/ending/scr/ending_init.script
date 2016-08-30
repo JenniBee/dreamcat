@@ -7,7 +7,7 @@ global WinMenu;
 ////////////////////////////////////////////////////////////////////////////////
   Game.Interactive=true;
 
-Game.PlayMusicChannel(3, "music\bad_golf.wav", false);
+Game.PlayMusicChannel(3, "music\outro.wav", false);
 Game.MusicCrossfade(2, 3, 500);
 
 actor.SkipTo(159, 300);
@@ -23,5 +23,5 @@ on "LeftClick"
 Game.ChangeScene("scenes\ending\credits.scene");
 }
 
-Sleep(4000);
+Sleep(2000);
 Game.ChangeScene("scenes\ending\credits.scene");
